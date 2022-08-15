@@ -116,9 +116,8 @@ class DecisionTreeRegression():
             SSE = np.sum(np.power((Y-model.predict(X)),2))
             SSE_left = np.sum(np.power((Y_left - model_left.predict(X_left)), 2))
             SSE_right = np.sum(np.power((Y_right - model_right.predict(X_right)), 2))
-            weight_l = len(l_child) / len(parent)
-            weight_r = len(r_child) / len(parent)
-            reduction = SSE - (weight_l*SSE_left + weight_r*SSE_right)
+            
+            reduction = SSE - (SSE_left + SSE_right)
             return reduction
 
         elif kernel == 'average':
