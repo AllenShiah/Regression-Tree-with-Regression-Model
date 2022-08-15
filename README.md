@@ -2,4 +2,4 @@
 
 Note: this is experimental model
 
-usage: ```https://github.com/AllenShiah/Regression-Tree-with-Regression-Model.git```
+usage: ```git colne https://github.com/AllenShiah/Regression-Tree-with-Regression-Model.git```
