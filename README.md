@@ -22,7 +22,7 @@ Second, import the package.
 import RegressionTree
 ```
 Third, use it like sklearn.
-```
+```Python
 # exapmple
 model = DecisionTreeRegression(min_samples_split=3, max_depth=3, kernel='regression')
 model.fit(X_train,Y_train)
